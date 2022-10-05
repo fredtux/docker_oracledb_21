@@ -12,7 +12,7 @@ Place the **LINUX.X64_213000_db_home.zip** file in the **21.0.3** folder
 ## Step 2
 Build the docker image using
 ```bash
-./buildContainerImage.sh -v 21.3.0 -t oracledb_21 -s -i
+./buildContainerImage.sh -v 21.3.0 -t docker_oracledb_21 -s -i
 ```
 
 ## Step 3
