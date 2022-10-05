@@ -1,0 +1,23 @@
+version: '3.3'
+services:
+    oracledb_21:
+        container_name: docker_oracledb_21
+        ports:
+            - '1521:1521'
+            - '5500:5500'
+            - '2484:2484'
+        environment:
+            - ORACLE_SID=ORCLCDB
+            - ORACLE_PDB=ORCLPDB
+            - ORACLE_PWD=fmilove
+            - ENABLE_ARCHIVELOG=true
+            - ENABLE_TCPS=true
+        image: docker_oracledb_21
+        networks:
+          static-network:
+            ipv4_address: 172.20.128.2
+networks:
+  static-network:
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
