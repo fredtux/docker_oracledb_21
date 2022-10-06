@@ -24,6 +24,12 @@ docker-compose up
 ## Step 4
 Connect using the static IP **172.20.128.2** on port **1521** with the SID **ORCLCDB** username **SYSTEM** and password **fmilove**
 
+# Daily usage
+Spun up the container using
+```bash
+docker-compose up
+```
+
 # Miscellaneous
 ## Change password
 Use this command
